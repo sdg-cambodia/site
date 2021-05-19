@@ -1,0 +1,7 @@
+// Enter any custom Sass in this file.
+#goal-18 {
+    box-shadow: 5px 5px 5px 0px $goalTiles-tile-shadowColor;
+    &:hover{
+      box-shadow: 5px 5px 5px 0px $goalTiles-tile-shadowColor-hover;
+    }
+}
