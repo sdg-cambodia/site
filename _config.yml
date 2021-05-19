@@ -209,3 +209,12 @@ data_fields:
   series: SERIES
   units: UNIT_MEASURE
 graph_title_from_series: true
+
+site_config_form:
+  enabled: true
+
+indicator_config_form:
+  enabled: true
+
+indicator_metadata_form:
+  enabled: true
