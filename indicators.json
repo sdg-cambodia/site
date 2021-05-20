@@ -36,6 +36,22 @@
           "keywords": "",
           "href": "/site/1-4-1",
           "status": "complete"
+        },
+        {
+          "id": "1-5-1",
+          "title": "ចំនួនអ្នកស្លាប់បាត់ខ្លួននិងអ្នកដែលរងផលប៉ះពាល់ដោយផ្ទាល់បានបង្កឡើងដោយគ្រោះមហន្តរាយក្នុងចំនួនប្រជាជន ១០០.០០០ នាក់",
+          "description": "",
+          "keywords": "",
+          "href": "/site/1-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "1-a-2",
+          "title": "សមាមាត្រនៃការចំណាយសរុបរបស់រដ្ឋាភិបាលទៅលើសេវាកម្មចាំបាច់ (ការអប់រំសុខភាពនិងការគាំពារសង្គម)",
+          "description": "",
+          "keywords": "",
+          "href": "/site/1-a-2",
+          "status": "notstarted"
         }]
     }
   },
@@ -60,6 +76,14 @@
           "keywords": "",
           "href": "/site/2-2-2",
           "status": "complete"
+        },
+        {
+          "id": "2-2-3",
+          "title": "global_indicators.2-2-3-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/2-2-3",
+          "status": "notstarted"
         },
         {
           "id": "2-3-1",
