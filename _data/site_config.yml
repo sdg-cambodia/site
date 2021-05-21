@@ -145,15 +145,22 @@ languages:
   - en
 languages_public: []
 logos: []
-map_layers: []
+map_layers:
+  - subfolder: provinces
+    label: ''
+    min_zoom: 5
+    max_zoom: 10
+    staticBorders: false
 map_options:
   minZoom: 5
   maxZoom: 10
-  tileURL: ''
+  tileURL: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
   tileOptions:
     id: ''
     accessToken: ''
-    attribution: ''
+    attribution: >-
+      &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
+      contributors
   colorRange: chroma.brewer.BuGn
   noValueColor: '#f0f0f0'
   styleNormal:
