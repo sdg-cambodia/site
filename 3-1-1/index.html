@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210521013602">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210521203812">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -428,19 +428,19 @@ var translations = {
   data-id="3-1-1"
   data-country="Cambodia"
   data-charttitle="អត្រាមរណភាពមាតា"
-  data-charttitles="null"
+  data-charttitles="[]"
   data-measurementunit=""
   data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
-  data-showmap=""
-  data-startvalues="null"
-  data-graphlimits="null"
+  data-showmap="true"
+  data-startvalues="[]"
+  data-graphlimits="[]"
   data-stackeddisaggregation=""
-  data-graphannotations="null"
+  data-graphannotations="[]"
   data-indicatordownloads="null"
   data-compositebreakdownlabel=""
-  data-precision="null"
+  data-precision="[]"
 >
   
   <span role="status" class="sr-only" id="indicator-data-view-status"></span>
@@ -484,6 +484,10 @@ var translations = {
         
         
         
+        <th scope="col">GeoCode</th>
+        
+        
+        
         <th scope="col">{"BOOL"=>"រង្វាស់ប៊ូលីនឬគោលពីរ", "CON_USD"=>"ដុល្លារថេរ", "CUR_LCU"=>"រូបិយប័ណ្ណ​ក្នុងស្រុក", "GPERM3"=>"មីក្រូក្រាមក្នុងមួយម៉ែត្រគូប", "HA"=>"ហិកតា", "INDEX"=>"សន្ទស្សន៍", "KG"=>"គីឡូក្រាម", "KG_CO2_PER_GDP_CON_PPP_USD"=>"សមមូលឧស្ម័នកាបូនិកក្នុងមួយផ។ ស។ សថេរភីភី ១ ដុល្លារ", "KG_OE_PER_GDP_CON_PPP_USD"=>"សមមូលប្រេងក្នុងមួយផ។ ស។ ស។ ភី។ ភីថេរ ១.០០០ ដុល្លារ", "KG_PER_CON_USD"=>"គីឡូក្រាមក្នុងមួយដុល្លារថេរ", "KM"=>"គីឡូម៉ែត្រ", "KM2"=>"គីឡូម៉ែត្រ​ការ៉េ", "KWH"=>"គីឡូម៉ែត្រម៉ោង", "LCU_PPP_USD"=>"រូបិយប័ណ្ណក្នុងស្រុកក្នុងមួយដុល្លារ (ភីភីភី)", "LITRES_PURE_ALCOHOL"=>"លីត្រអាល់កុលសុទ្ធ", "LIVE_BIRTHS_PER_WOMAN"=>"កំណើតរស់ក្នុងស្ត្រីម្នាក់", "MJ_PER_GDP_CON_PPP_USD"=>"មេហ្គាហ្កាលក្នុងមួយភី។ ភី។ ភី។ ភីថេរ", "M_M3_PER_YR"=>"រាប់លានម៉ែត្រគូបក្នុងមួយឆ្នាំ", "NA"=>"មិនអាចអនុវត្តបាន", "NUMBER"=>"ចំនួន", "PERCENT"=>"បដិសេធ (គិតជាភាគរយ)", "PER_1000000_POP"=>"ក្នុងមួយលាននាក់", "PER_100000_EMP"=>"ក្នុងមួយ 100,000 បុគ្គលិក", "PER_100000_FTE"=>"ក្នុងចំនួន ១០០,០០០ សមមូលពេញម៉ោង", "PER_100000_LIVE_BIRTHS"=>"ក្នុងមួយកំណើតរស់ ១០០.០០០ នាក់", "PER_100000_POP"=>"ក្នុងមួយប្រជាជន ១០០.០០០ នាក់", "PER_100000_PRSN_INSR"=>"ក្នុងចំណោមមនុស្ស ១០០.០០០ នាក់ត្រូវបានធានារ៉ាប់រង", "PER_100000_WKRS_EMP"=>"ក្នុងចំណោមកម្មករ ១០០.០០០ នាក់មានការងារធ្វើ", "PER_100000_WKRS_EXPD"=>"ក្នុងចំណោមកម្មករ ១០០.០០០ នាក់ប្រឈមនឹងហានិភ័យ", "PER_10000_POP"=>"ក្នុងមួយម៉ឺននាក់", "PER_1000_LIVE_BIRTHS"=>"ក្នុង ១.០០០ កំណើតរស់", "PER_1000_POP"=>"ក្នុង ១.០០០ នាក់", "PER_1000_UNINFECTED_POP"=>"ក្នុងចំណោមប្រជាជន ១០០០ នាក់ដែលមិនបានឆ្លងរោគ", "PER_1000_USD"=>"ក្នុង ១.០០០ ដុល្លារ", "PER_100_LIVE_BIRTHS"=>"ក្នុង ១០០ កំណើតរស់", "PER_100_POP"=>"ក្នុង ១០០ នាក់", "PROB"=>"ប្រូបាប", "PT"=>"ភាគរយ", "PV_USD"=>"ដុល្លារគិតតាមលក្ខខណ្ឌតម្លៃបច្ចុប្បន្នសុទ្ធ", "P_KM"=>"គីឡូម៉ែត្រអ្នកដំណើរ", "RATIO"=>"សមាមាត្រ (សមាមាត្រ)", "RO"=>"សមាមាត្រ", "T"=>"តោន", "T_KM"=>"តោន", "T_OE"=>"ស្មើនឹងប្រេងកាតតោន", "T_PER_HA"=>"តោនក្នុងមួយហិកតា", "UNIT_MEASURE"=>"ឯកតារង្វាស់", "USD"=>"ដុល្លារ​អាមេរិក", "USD_GDP_PPP"=>"ក្នុង ១ ដុល្លារអាមេរិក (ភី។ ភី។ ភី)", "USD_PER_FARMER"=>"ដុល្លារអាមេរិកសម្រាប់កសិករម្នាក់", "USD_PER_HA"=>"ដុល្លារក្នុងមួយហិកតា", "USD_PER_M3"=>"ដុល្លារអាមេរិកក្នុងមួយម៉ែត្រគូប", "Y"=>"ឆ្នាំ"}</th>
         
         
@@ -502,6 +506,10 @@ var translations = {
           
           
           <td>56.3</td>
+          
+          
+          
+          <td></td>
           
           
           
@@ -525,6 +533,10 @@ var translations = {
           
           
           
+          <td></td>
+          
+          
+          
           <td>ឆ្នាំ</td>
           
           
@@ -542,6 +554,10 @@ var translations = {
           
           
           <td>58.2</td>
+          
+          
+          
+          <td></td>
           
           
           
@@ -565,6 +581,10 @@ var translations = {
           
           
           
+          <td></td>
+          
+          
+          
           <td>ឆ្នាំ</td>
           
           
@@ -582,6 +602,10 @@ var translations = {
           
           
           <td>59.6</td>
+          
+          
+          
+          <td></td>
           
           
           
@@ -605,6 +629,10 @@ var translations = {
           
           
           
+          <td></td>
+          
+          
+          
           <td>ឆ្នាំ</td>
           
           
@@ -622,6 +650,10 @@ var translations = {
           
           
           <td>61.0</td>
+          
+          
+          
+          <td></td>
           
           
           
@@ -645,6 +677,10 @@ var translations = {
           
           
           
+          <td></td>
+          
+          
+          
           <td>ឆ្នាំ</td>
           
           
@@ -662,6 +698,10 @@ var translations = {
           
           
           <td>62.4</td>
+          
+          
+          
+          <td></td>
           
           
           
@@ -685,6 +725,10 @@ var translations = {
           
           
           
+          <td></td>
+          
+          
+          
           <td>ឆ្នាំ</td>
           
           
@@ -702,6 +746,10 @@ var translations = {
           
           
           <td>63.8</td>
+          
+          
+          
+          <td></td>
           
           
           
@@ -725,6 +773,10 @@ var translations = {
           
           
           
+          <td></td>
+          
+          
+          
           <td>ឆ្នាំ</td>
           
           
@@ -742,6 +794,10 @@ var translations = {
           
           
           <td>65.2</td>
+          
+          
+          
+          <td></td>
           
           
           
@@ -765,6 +821,10 @@ var translations = {
           
           
           
+          <td></td>
+          
+          
+          
           <td>ឆ្នាំ</td>
           
           
@@ -782,6 +842,10 @@ var translations = {
           
           
           <td>67.6</td>
+          
+          
+          
+          <td></td>
           
           
           
@@ -805,6 +869,10 @@ var translations = {
           
           
           
+          <td></td>
+          
+          
+          
           <td>ឆ្នាំ</td>
           
           
@@ -822,6 +890,10 @@ var translations = {
           
           
           <td>69.1</td>
+          
+          
+          
+          <td></td>
           
           
           
@@ -845,6 +917,10 @@ var translations = {
           
           
           
+          <td></td>
+          
+          
+          
           <td>ឆ្នាំ</td>
           
           
@@ -862,6 +938,10 @@ var translations = {
           
           
           <td>70.6</td>
+          
+          
+          
+          <td></td>
           
           
           
@@ -885,6 +965,10 @@ var translations = {
           
           
           
+          <td></td>
+          
+          
+          
           <td>ឆ្នាំ</td>
           
           
@@ -905,6 +989,10 @@ var translations = {
           
           
           
+          <td></td>
+          
+          
+          
           <td>ឆ្នាំ</td>
           
           
@@ -921,7 +1009,13 @@ var translations = {
   <div id="datatableFooter">
     
     
+    <p>តំបន់ភូមិសាស្ត្រ: </p>
     
+    
+    <p>ឯកតារង្វាស់: </p>
+    
+    
+    <p>លេខយោង: </p>
     
   </div>
 
@@ -951,6 +1045,12 @@ data-event-category="Tab change"
 data-event-action="Change data view"
 data-event-label="Change to Table tab"
 >តារាង</a>
+  </li><li role="presentation" class="nav-item map" style="display:none">
+    <a data-no-disagg="true" class="nav-link" data-toggle="tab" id="tab-mapview" href="#mapview" aria-controls="mapview" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Map tab"
+ aria-describedby="table-alternative">ផែនទី</a>
   </li></ul>
 
     <div class="tab-content data-view">
@@ -1252,7 +1352,46 @@ opensdg.chartConfigAlter(function(config, info) {
 
 <div id="tableSelectionDownload" class="clearfix"></div>
 
+  </div><div role="tabpanel" class="tab-pane" id="mapview" class="map">
+    
+<h4 id="map-heading" class="chart-title">អត្រាមរណភាពមាតា</h4>
+<div id="map" aria-describedby="table-alternative">
+  <img class="map-loading-image" src="/site/assets/img/loading.gif" alt="កំពុងផ្ទុកផែនទី" />
+</div>
+
+
+
+
+<div id="mapFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+
+        
+
+        
+
+        
+
+        
+    <dl>
+</div>
+
+
   </div>
+  <div role="tabpanel" class="tab-pane" id="embeddedmapview" class="embedded-map">
+    <div class="row">
+  <div class="col-xs-12">
+    
+    
+    
+    <div class="embedded-map" id="embeddedmapframe">
+    
+  </div>
+</div>
+
+  </div>
+  
 </div>
 
 
@@ -2219,6 +2358,17 @@ data-event-label="Change to Sources tab"
 <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js" integrity="sha512-9hzM/Gfa9KP1hSBlq3/zyNF/dfbcjAYwUTBWYX+xi8fzfAPHL3ILwS1ci0CTVeuXTGkRAWgRMZZwtSNV7P+nfw==" crossorigin="anonymous"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.zoomshowhide@0.1.0/dist/leaflet-zoom-show-hide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.4.0/chroma.min.js"></script>
+<script src="https://cdn.rawgit.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
+<script src="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<script src="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
@@ -2229,12 +2379,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'ស្វែងរក';</script>
 
-<script src='/site/assets/js/sdg.js?v=20210521013602'></script>
+<script src='/site/assets/js/sdg.js?v=20210521203812'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20210521013602"></script><script>
+    <script src="/site/assets/js/custom.js?v=20210521203812"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
