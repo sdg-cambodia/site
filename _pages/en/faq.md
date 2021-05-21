@@ -2,6 +2,7 @@
 title: Frequently Asked Questions (FAQ)
 permalink: /en/faq/
 layout: page
+language: en
 ---
 
 ## How do I suggest new or different data sources?
