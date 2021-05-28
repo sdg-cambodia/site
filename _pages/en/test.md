@@ -1,6 +1,6 @@
 ---
 title: Testing (English version)
-permalink: /testing/
+permalink: /en/testing/
 language: en
 layout: page
 ---
