@@ -99,7 +99,7 @@ frontpage_cards:
     button_link: 'https://example.com'
     rule_color: ''
 frontpage_goals_grid:
-  title: នឹងប្តូពេលក្រោយ
+  title: custom.goal_grid_title
   description: អត្ថបទខាងក្រោម និងបន្ថែមពេលក្រោយ
 frontpage_heading: ''
 frontpage_instructions: ''
