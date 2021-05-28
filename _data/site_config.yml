@@ -221,7 +221,7 @@ sharethis_property: ''
 site_config_form:
   enabled: true
   dropdowns: []
-  repository_link: ''
+  repository_link: 'https://github.com/sdg-cambodia/site/tree/develop/_data'
   translation_link: ''
 validate_indicator_config: false
 validate_site_config: false
