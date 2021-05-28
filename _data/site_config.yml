@@ -146,10 +146,10 @@ languages:
 languages_public: []
 logos:
   - language: km
-    src: km-logo.png
+    src: assets/img/km-logo.png
     alt: ព្រះរាជាណាចក្រកម្ពុជា ក្រសួងផែនការ វិទ្យាស្ថានជាតិស្ថិតិ
   - language: en
-    src: en-logo.png
+    src: assets/img/en-logo.png
     alt: National Institute of Statistics - Ministry of Planning - Cambodia
 map_layers:
   - subfolder: provinces
