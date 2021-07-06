@@ -59,8 +59,8 @@ data_fields:
   series: SERIES
 date_formats: []
 disclaimer:
-  phase: EXAMPLE
-  message: This site is an unofficial example for demonstrational purposes only.
+  phase: ''
+  message: ''
 email_contacts:
   questions: test@example.com
   suggestions: test@example.com
@@ -83,22 +83,6 @@ frontpage_cards:
     button_label: ''
     button_link: ''
     rule_color: ''
-  - title: Lorem ipsum
-    content: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis
-      cursus est sed dapibus.
-    include: ''
-    button_label: Read more
-    button_link: 'https://example.com'
-    rule_color: ''
-  - title: Nam vestibulum
-    content: |
-      Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a
-      interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.
-    include: ''
-    button_label: Read more
-    button_link: 'https://example.com'
-    rule_color: ''
 frontpage_goals_grid:
   title: custom.goal_grid_title
   description: អត្ថបទខាងក្រោម និងបន្ថែមពេលក្រោយ
@@ -119,7 +103,7 @@ graph_color_list: []
 graph_color_number: 0
 graph_title_from_series: true
 header:
-  include: header-default.html
+  include: header-menu-left-aligned.html
 header_language_toggle: links
 hide_empty_metadata: true
 indicator_config_form:
