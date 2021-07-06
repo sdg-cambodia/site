@@ -18,6 +18,7 @@ breadcrumbs:
       label: general.home
     - path: /news
       label: menu.updates
+contrast_type: default
 country:
   name: Cambodia
   adjective: Cambodian
@@ -118,7 +119,7 @@ graph_color_list: []
 graph_color_number: 0
 graph_title_from_series: true
 header:
-  include: header-menu-left-aligned.html
+  include: header-default.html
 header_language_toggle: links
 hide_empty_metadata: true
 indicator_config_form:
@@ -214,6 +215,8 @@ reporting_status:
   title: ''
   description: ''
   disaggregation_tabs: false
+repository_url_data: ''
+repository_url_site: ''
 search_index_boost: []
 search_index_extra_fields: []
 series_toggle: true
