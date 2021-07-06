@@ -129,7 +129,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210706012148">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210706012417">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -163,7 +163,7 @@ layout-config-builder
 
 </div>
 
-<header role="banner" class="header-menu-left-aligned">
+<header role="banner" class="header-default">
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
@@ -218,66 +218,7 @@ data-event-label="high"
     </div></div>
     </div>
 
-    <div class="search-and-desktop-widgets">
-      <div id="search" class="menu-target">
-  <form action="/site/search/">
-    <label class="sr-only" for="indicator_search">ស្វែងរក</label>
-    <input type="text" name="q" id="indicator_search" title="ស្វែងរក" /><!--
-    --><button aria-label="ស្វែងរក" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
-  </form>
-</div>
-
-      <div class="navbar navbar-default widgets-without-menu">
-        <ul class="nav navbar-nav contrast-switcher"><li class="language-toggle-menu-header">
-            
-
-
-
-
-
-  <div class="language-toggle-container">
-  <i class="fa fa-globe language-toggle-globe-links"></i>
-  <ul class="language-toggle-links"><li>
-      <a class="language-toggle-link" href="/site/en/config/"><span class="language-name">English</span>
-        <span class="language-abbreviation">en</span></a>
-    </li></ul>
-</div>
-
-
-
-        </li>
-
-    <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="បិទដំណើរការកម្រិតពណ៌ខ្ពស់"
-           aria-label="បិទដំណើរការកម្រិតពណ៌ខ្ពស់"
-           data-contrast-switch-to="default"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="default"
-
-        >A</a>
-    </li>
-    <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="បើកដំណើរការកម្រិតពណ៌ខ្ពស់"
-           aria-label="បើកដំណើរការកម្រិតពណ៌ខ្ពស់"
-           data-contrast-switch-to="high"
-           href="javascript:void(0)"
-           data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="high"
-
-        >A</a>
-    </li>
-
-
-        </ul>
-      </div>
-    </div>
-
-    <div class="navbar navbar-default menu-without-widgets" id="main-nav">
+    <nav class="navbar navbar-default" id="main-nav">
       <ul class="top-level">
     <li id="menuToggle"
         aria-label="បិទ / បើកម៉ឺនុយ។ ចុចដើម្បីពង្រីកឬបង្រួមម៉ឺនុយ។"
@@ -360,7 +301,15 @@ data-event-label="high"
 
     </li>
 </ul>
-      <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link ">
+      <div id="search" class="menu-target">
+  <form action="/site/search/">
+    <label class="sr-only" for="indicator_search">ស្វែងរក</label>
+    <input type="text" name="q" id="indicator_search" title="ស្វែងរក" /><!--
+    --><button aria-label="ស្វែងរក" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  </form>
+</div>
+
+      <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
     <a href="/site/goals">គោលដៅ</a>
 </li><li class="nav-link ">
     <a href="/site/reporting-status">ស្ថានភាពរបាយការណ៍</a>
@@ -372,12 +321,57 @@ data-event-label="high"
     <a href="/site/faq">សំណួរគេសួរញឹកញាប់</a>
 </li><li class="nav-link ">
     <a href="/site/news">បច្ចុប្បន្នភាព</a>
+</li><li class="language-toggle-menu-header">
+    
+
+
+
+
+
+  <div class="language-toggle-container">
+  <i class="fa fa-globe language-toggle-globe-links"></i>
+  <ul class="language-toggle-links"><li>
+      <a class="language-toggle-link" href="/site/en/config/"><span class="language-name">English</span>
+        <span class="language-abbreviation">en</span></a>
+    </li></ul>
+</div>
+
+
+
 </li>
+
+
+
+    <li class="nav-link contrast contrast-default contrast-type-default">
+        <a title="បិទដំណើរការកម្រិតពណ៌ខ្ពស់"
+           aria-label="បិទដំណើរការកម្រិតពណ៌ខ្ពស់"
+           data-contrast-switch-to="default"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="default"
+
+        >A</a>
+    </li>
+    <li class="nav-link contrast contrast-high contrast-type-default">
+        <a title="បើកដំណើរការកម្រិតពណ៌ខ្ពស់"
+           aria-label="បើកដំណើរការកម្រិតពណ៌ខ្ពស់"
+           data-contrast-switch-to="high"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+
+        >A</a>
+    </li>
+
+
 
 </ul>
 
-    </div>
-
+    </nav>
   </div>
 
 </header>
@@ -679,7 +673,19 @@ data-event-label="high"
         console.log(e.message);
         console.log('Unable to set config key: breadcrumbs');
       }
-    propertyEditorAccessibilityFixes(editor.getEditor('root.breadcrumbs'));propertyEditorAccessibilityFixes(editor.getEditor('root.contrast_type'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.breadcrumbs'));
+      try {
+        var currentValue = normalizeCurrentValue('contrast_type', "default");
+        var propertyEditor = editor.getEditor('root.contrast_type');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: contrast_type');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.contrast_type'));
       try {
         var currentValue = normalizeCurrentValue('country', {"name":"Cambodia","adjective":"Cambodian"});
         var propertyEditor = editor.getEditor('root.country');
@@ -1053,7 +1059,7 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_title_from_series'));
       try {
-        var currentValue = normalizeCurrentValue('header', {"include":"header-menu-left-aligned.html"});
+        var currentValue = normalizeCurrentValue('header', {"include":"header-default.html"});
         var propertyEditor = editor.getEditor('root.header');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1315,7 +1321,31 @@ data-event-label="high"
         console.log(e.message);
         console.log('Unable to set config key: reporting_status');
       }
-    propertyEditorAccessibilityFixes(editor.getEditor('root.reporting_status'));propertyEditorAccessibilityFixes(editor.getEditor('root.repository_url_data'));propertyEditorAccessibilityFixes(editor.getEditor('root.repository_url_site'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.reporting_status'));
+      try {
+        var currentValue = normalizeCurrentValue('repository_url_data', "");
+        var propertyEditor = editor.getEditor('root.repository_url_data');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: repository_url_data');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.repository_url_data'));
+      try {
+        var currentValue = normalizeCurrentValue('repository_url_site', "");
+        var propertyEditor = editor.getEditor('root.repository_url_site');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: repository_url_site');
+      }
+    propertyEditorAccessibilityFixes(editor.getEditor('root.repository_url_site'));
       try {
         var currentValue = normalizeCurrentValue('search_index_boost', []);
         var propertyEditor = editor.getEditor('root.search_index_boost');
@@ -1499,12 +1529,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'ស្វែងរក';</script>
 
-<script src='/site/assets/js/sdg.js?v=20210706012148'></script>
+<script src='/site/assets/js/sdg.js?v=20210706012417'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20210706012148"></script><script>
+    <script src="/site/assets/js/custom.js?v=20210706012417"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
