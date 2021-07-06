@@ -2727,3 +2727,6 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 
 .language-km {
   font-family: 'Khmer OS Siemreap', 'Open Sans', Helvetica, Arial, sans-serif; }
+
+h1 {
+  font-size: 25px; }
