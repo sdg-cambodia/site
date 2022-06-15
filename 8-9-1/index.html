@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -123,26 +123,31 @@ var translations = {
         <script src="/site/assets/js/lib/classList.js"></script>
         <![endif]-->
 
-        <!-- Favicons ================================================== -->
-        <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/site/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/site/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
-        http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
-        -->
+        
+
+
+
+
+<link rel="shortcut icon" type="image/ico" href="/site/assets/img/favicons/favicon.ico">
+<link rel="icon" type="image/png" href="/site/assets/img/favicons/favicon.png">
+
 
         
+        
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
+        
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20220615104208">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20220615111206">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
         <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
+        
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Khmer&display=swap" rel="stylesheet">
@@ -154,15 +159,18 @@ layout-indicator
 <!-- <div class="container"> -->
 
 
+
 <script>translations['header'] = {"alpha":"អាល់ហ្វា","default_contrast":"កម្រិតពណ៌លំនាំដើម","disable_high_contrast":"បិទដំណើរការកម្រិតពណ៌ខ្ពស់","disclaimer":"នេះគឺជាគេហទំព័រអភិវឌ្ឍន៍។ យើងសូមស្វាគមន៍រាល់មតិប្រតិកម្មរបស់អ្នក [៤៧] [៨៧] ។","enable_high_contrast":"បើកដំណើរការកម្រិតពណ៌ខ្ពស់","high_contrast":"កម្រិត​ពណ៌​ខ្ពស់","skip_link":"រំលងទៅមាតិកាមេ","tag_line":"គោលដៅចំនួន ១៧ ដើម្បីបំរែបំរួលពិភពលោករបស់យើង","toggle_menu":"បិទ / បើកម៉ឺនុយ។ ចុចដើម្បីពង្រីកឬបង្រួមម៉ឺនុយ។","toggle_search":"ស្វែងរកបិទ / បើក។ ចុចដើម្បីពង្រីកឬបង្រួមរបារស្វែងរក។"};</script>
 
 <a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">រំលងទៅមាតិកាមេ</a>
 <div id="disclaimer">
-  <div class="container">
+  
+<div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">អាល់ហ្វា</strong>
     
     នេះគឺជាគេហទំព័រអភិវឌ្ឍន៍។ យើងសូមស្វាគមន៍រាល់មតិប្រតិកម្មរបស់អ្នក [៤៧] [៨៧] ។
+    
   </div>
 </div>
 
@@ -212,7 +220,7 @@ data-event-label="high"
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">ភាសាខ្មែរ</span>
       <span class="language-abbreviation">km</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li>
+    <ul class="dropdown-menu"><li class="language-option-en">
             <a href="/site/en/8-9-1/">
               English
             </a>
@@ -242,7 +250,7 @@ data-event-label="high"
 
   <div class="language-toggle-container">
   <i class="fa fa-globe language-toggle-globe-links"></i>
-  <ul class="language-toggle-links"><li>
+  <ul class="language-toggle-links"><li class="language-option-en">
       <a class="language-toggle-link" href="/site/en/8-9-1/"><span class="language-name">English</span>
         <span class="language-abbreviation">en</span></a>
     </li></ul>
@@ -309,7 +317,7 @@ data-event-label="high"
 
   <div class="language-toggle-container">
   <i class="fa fa-globe language-toggle-globe-links"></i>
-  <ul class="language-toggle-links"><li>
+  <ul class="language-toggle-links"><li class="language-option-en">
       <a class="language-toggle-link" href="/site/en/8-9-1/"><span class="language-name">English</span>
         <span class="language-abbreviation">en</span></a>
     </li></ul>
@@ -391,9 +399,18 @@ data-event-label="high"
 
 
 
+
 <script type="text/template" id="item_template">
   <% _.each(fields, function(fieldItem) { %>
-    <div class="variable-selector<% if(allowedFields.indexOf(fieldItem.field) == -1) { %> disallowed child<% }%>" data-field="<%=fieldItem.field%>">
+    <div class="variable-selector
+      <% if(allowedFields.indexOf(fieldItem.field) == -1) { %> disallowed <% }%>
+      <% if (typeof childFields !== 'undefined' && childFields.indexOf(fieldItem.field) !== -1) { %> child <% }%>
+      <% // @deprecated start %>
+      <% if (typeof childFields === 'undefined' && allowedFields.indexOf(fieldItem.field) == -1) { %> child <% }%>
+      <% // @deprecated end %>
+      "
+      data-field="<%=fieldItem.field%>"
+    >
       <button class='accessBtn' tabindex='0' aria-expanded='false'
         <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
         aria-describedby='variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>'
@@ -432,7 +449,7 @@ data-event-label="high"
 </script>
 
 <script type="text/template" id="units_template">
-  <% if(units.length) { %>
+  
     <h4>ឯកតារង្វាស់</h4>
     <fieldset>
       <legend class="sr-only">ឯកតារង្វាស់</legend>
@@ -441,11 +458,11 @@ data-event-label="high"
         <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
       <% }); %>
     </fieldset>
-  <% } %>
+  
 </script>
 
 <script type="text/template" id="series_template">
-  <% if(serieses.length) { %>
+  
     <h4>ស៊េរី</h4>
     <fieldset>
       <legend class="sr-only">ស៊េរី</legend>
@@ -454,7 +471,7 @@ data-event-label="high"
         <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
       <% }); %>
     </fieldset>
-  <% } %>
+  
 </script>
 
 <script>translations['indicator'] = {"annotation_2030_target":"គោលដៅ ២០៣០","announce_data_added":"តារាងនិងតារាងត្រូវបានធ្វើបច្ចុប្បន្នភាពដើម្បីបញ្ចូលទិន្នន័យ។","announce_data_not_available":"តារាងនិងតារាងបង្ហាញទិន្នន័យ។","announce_data_removed":"តារាងនិងតារាងត្រូវបានធ្វើបច្ចុប្បន្នភាពដើម្បីមិនរាប់បញ្ចូលទិន្នន័យ។","chart":"គំនូសតាង","chart_annotation":"ចំណារពន្យល់គំនូសតាង","clear_all":"លុបចេញ​ទាំងអស់","clear_selections":"ការជ្រើសរើសច្បាស់","data_keyboard_navigation":"ចុចបញ្ចូលដើម្បីរកចំណុចទិន្នន័យដោយប្រើព្រួញឆ្វេងនិងស្តាំ។","data_not_available":"ទិន្នន័យនេះមិនមានទេ។ សូមជ្រើសរើសទិន្នន័យជំនួសដើម្បីបង្ហាញ។","data_tabular_alternative":"សម្រាប់ជម្រើសទិន្នន័យថេបសូមមើលផ្ទាំងតារាង។","dataset_size_warning":"មានសំណុំទិន្នន័យច្រើនពេកដើម្បីបង្ហាញនៅលើតារាង។ មិនមែនទាំងអស់នឹងត្រូវបានបង្ហាញរហូតដល់អ្នកដកជម្រើសមួយចំនួនចេញ។","download_chart":"ទាញយកតារាង CSV","download_chart_image":"ទាញយករូបភាពគំនូសតាង","download_chart_image_title":"ទាញយកគំនូសតាងជារូបភាព","download_csv":"ទាញយកស៊ីអេសវី","download_csv_title":"ទាញយកជាស៊ីអេសអេស","download_geojson":"ទាញយក GeoJSON","download_geojson_title":"ទាញយកជា GeoJSON","download_headline":"ទាញយកចំណងជើងស៊ីអេសអេស","download_headline_title":"ទាញយកទិន្នន័យចំណងជើងជា CSV","download_source":"ទាញយកប្រភពស៊ីអេសអេស","download_source_sdmx":"ទាញយកប្រភព SDMX","download_source_sdmx_title":"ទាញយកទិន្នន័យប្រភពជា SDMX","download_source_title":"ទាញយកទិន្នន័យប្រភពជាស៊ីអេសអេស","download_table":"ទាញយកតារាង CSV","edit":"កែប្រែ","edit_configuration":"កែសម្រួលការកំណត់រចនាសម្ព័ន្ធ","edit_data":"កែទិន្នន័យ","edit_metadata":"កែសម្រួលទិន្នន័យមេតាតា","footnote":"លេខយោង","geographical_area":"តំបន់ភូមិសាស្ត្រ","global_metadata":"ទិន្នន័យមេតាសកល","global_metadata_blurb":"តារាងនេះផ្តល់ព័ត៌មានអំពីទិន្នន័យមេតាសម្រាប់សូចនាករអេសជីជីដែលបានកំណត់ដោយគណៈកម្មការស្ថិតិរបស់អង្គការសហប្រជាជាតិ។ [១០៨] ទិន្នន័យមេតាសកលពេញលេញ [១៨០] ត្រូវបានផ្គត់ផ្គង់ដោយផ្នែកស្ថិតិរបស់អង្គការសហប្រជាជាតិ។","legend_help":"ចុចលើតាងដើម្បីយកបន្ទាត់នីមួយៗចេញពីតារាង។","loading":"កំពុងតម្លើង","loading_map":"កំពុងផ្ទុកផែនទី","map":"ផែនទី","map_search":"ស្វែងរក","map_search_hide":"លាក់ការស្វែងរក","map_search_show":"បង្ហាញការស្វែងរក","map_year_slider":"រំកិលឆ្នាំ","national_metadata":"ម៉េតាទិន្នន័យថ្នាក់ជាតិ","national_metadata_blurb":"តារាងនេះផ្តល់ទិន្នន័យមេតាសម្រាប់សូចនាករជាក់ស្តែងដែលអាចរកបានពីស្ថិតិ% country_name ដែលនៅជិតសូចនាករ SDG សកលដែលត្រូវគ្នា។ សូមកត់សម្គាល់ថាទោះបីជាសូចនាករអេសជីជីសកលអាចប្រើបានយ៉ាងពេញលេញពីស្ថិតិស្ថិតិប្រទេស% តារាងនេះគួរតែត្រូវបានពិគ្រោះយោបល់សម្រាប់ព័ត៌មានស្តីពីវិធីសាស្រ្តជាតិនិងព័ត៌មានមេតាដាតាផ្សេងទៀតដែលទាក់ទងនឹងប្រទេស% ។","next":"សូចនាករបន្ទាប់","no_data_hint":"មិនមានជំរើសទេដោយសារត្រងខាងលើ","plot_legend_description":"រឿងព្រេងដីឡូត៍៖ បញ្ជីនៃបន្ទាត់ដែលមានក្នុងតារាង","previous":"សូចនាករមុន","select_all":"ជ្រើសយកទាំងអស់","series":"ស៊េរី","series_help":"ជ្រើសរើសប្រភេទចេញពីបញ្ជីខាងក្រោមដើម្បីមើលការបំបែកទិន្នន័យផ្សេងៗគ្នា។ ខ្លះនឹងមិនមានទេរហូតដល់ថ្នាក់ខ្ពស់ត្រូវបានជ្រើសរើស។","source":"ប្រភព","sources":"ប្រភព","status":"ស្ថានភាពសូចនាករ","sub_categories":"ប្រភេទរង","sub_categories_show":"បង្ហាញប្រភេទរង៖","table":"តារាង","table_column_sort":"ចុចដើម្បីតម្រៀបតាមជួរឈរនេះ","tags":"ស្លាក","unit":"ឯកតា","unit_of_measurement":"ឯកតារង្វាស់","units_type":"ប្រភេទឯកតា","variable_hint":"អាចប្រើបាននៅពេល '% field' ត្រូវបានជ្រើសរើស","view_indicator_list":"មើលបញ្ជីសូចនាករគោលដៅរបស់គោលដៅនេះ"};</script>
@@ -507,6 +524,8 @@ data-event-label="high"
 
   
 
+  
+
 
   
 
@@ -520,14 +539,18 @@ data-event-label="high"
   data-charttitle="ផ។ ស។ សផ្ទាល់ពីវិស័យទេសចរណ៍ជាសមាមាត្រនៃផលិតផលសរុបក្នុងស្រុកនិងក្នុងអត្រាកំណើន"
   data-charttitles="null"
   data-measurementunit=""
+  data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
+  data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
   data-startvalues="null"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
+  data-graphtargetlines="null"
+  data-graphseriesbreaks="null"
   data-indicatordownloads="null"
   data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;GeoCode&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;GeoCode&quot;},{&quot;name&quot;:&quot;REF_AREA&quot;,&quot;type&quot;:&quot;number&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&quot;]},&quot;title&quot;:&quot;តំបន់យោង&quot;},{&quot;name&quot;:&quot;SERIES&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;ស៊េរីអេសជីជី&quot;},{&quot;name&quot;:&quot;UNIT_MEASURE&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;ឯកតារង្វាស់&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;},{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Year&quot;}]}"
   data-compositebreakdownlabel=""
@@ -757,24 +780,63 @@ data-event-label="high"
   <span id="table-alternative">សម្រាប់ជម្រើសទិន្នន័យថេបសូមមើលផ្ទាំងតារាង។</span>
 </div>
 <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
-  <li role="presentation" class="nav-item active">
-    <a class="nav-link" data-toggle="tab" id="tab-chartview" href="#chartview" aria-controls="chartview" role="tab" data-on="click"
+  
+  <li role="presentation"
+    class="
+      nav-item
+      
+      
+      active
+    ">
+    <a
+      class="nav-link"
+      data-toggle="tab"
+      role="tab"
+      
+        id="tab-chartview"
+        href="#chartview"
+        aria-controls="chartview"
+        aria-describedby="table-alternative"
+        data-on="click"
 data-event-category="Tab change"
 data-event-action="Change data view"
 data-event-label="Change to Chart tab"
- aria-describedby="table-alternative">គំនូសតាង</a>
+
+      
+    >គំនូសតាង</a>
   </li>
-  <li role="presentation" class="nav-item">
-    <a class="nav-link" data-toggle="tab" id="tab-tableview" href="#tableview" aria-controls="tableview" role="tab" data-on="click"
+  
+  <li role="presentation"
+    class="
+      nav-item
+      
+      
+      
+    ">
+    <a
+      class="nav-link"
+      data-toggle="tab"
+      role="tab"
+      
+        id="tab-tableview"
+        href="#tableview"
+        aria-controls="tableview"
+        data-on="click"
 data-event-category="Tab change"
 data-event-action="Change data view"
 data-event-label="Change to Table tab"
->តារាង</a>
-  </li></ul>
+
+      
+    >តារាង</a>
+  </li>
+  
+</ul>
 
     <div class="tab-content data-view">
-  <div role="tabpanel" class="tab-pane active" id="chartview">
+  
     
+      <div role="tabpanel" class="tab-pane active" id="chartview">
+        
 
     <div id="dataset-size-warning" style="display:none" role="alert">
       <i class="fa fa-bolt"><span class="sr-only">ការព្រមាន៖</span></i>
@@ -789,6 +851,7 @@ data-event-label="Change to Table tab"
           <h4 id="chart-heading" class="chart-title">ផ។ ស។ សផ្ទាល់ពីវិស័យទេសចរណ៍ជាសមាមាត្រនៃផលិតផលសរុបក្នុងស្រុកនិងក្នុងអត្រាកំណើន</h4>
           <div id="chart" class="plot-container">
             
+              
 <canvas
     role="img"
     aria-labelledby="chart-heading"
@@ -815,6 +878,14 @@ opensdg.chartConfigAlter(function(config, info) {
     // Add these overrides onto the normal config.
     $.extend(true, config, overrides);
   }
+  else {
+    // Otherwise remove any min/max that may be there.
+    try {
+      delete config.options.scales.yAxes[0].ticks.min;
+      delete config.options.scales.yAxes[0].ticks.max;
+    }
+    catch(e) {}
+  }
 });
 </script>
 
@@ -823,18 +894,24 @@ opensdg.chartConfigAlter(function(config, info) {
 opensdg.annotationPresets = {
     common: {
         // This "common" preset is applied to all annotations automatically.
-        borderColor: '#505a5f',
+        borderColor: '#949494',
         type: 'line',
+        borderDash: [10, 5],
+        borderWidth: 1,
         label: {
-            backgroundColor: 'black',
-            fontColor: 'white',
+            backgroundColor: 'white',
+            
+            fontColor: 'black',
+            
         },
         // This "highContrast" overrides colors when in high-contrast mode.
         highContrast: {
             label: {
-                backgroundColor: 'white',
-                fontColor: 'black'
-            }
+                backgroundColor: 'black',
+                
+                fontColor: 'white',
+                
+            },
         },
         // This callback is used to generate a generic description for screenreaders.
         // This can be overridden to be a more specific string, eg:
@@ -863,10 +940,20 @@ opensdg.annotationPresets = {
     },
     target_line: {
         mode: 'horizontal',
-        borderDash: [5, 5],
+        borderWidth: 2,
+        borderDash: [15, 10],
+        borderColor: '#757575',
         label: {
             position: 'right',
             content: translations.indicator.annotation_2030_target,
+        },
+    },
+    series_break: {
+        mode: 'vertical',
+        borderDash: [2, 2],
+        label: {
+            position: 'top',
+            content: translations.indicator.annotation_series_break,
         },
     },
 };
@@ -875,18 +962,21 @@ opensdg.annotationPresets = {
 opensdg.chartConfigAlter(function(config, info) {
     if (info.graphAnnotations && info.graphAnnotations.length > 0) {
         // Apply some helpers/fixes to the annotations.
-        var annotations = info.graphAnnotations.map(function(annotation) {
+        var annotations = info.graphAnnotations.map(function(annotationOverrides) {
+            var annotation = {};
             // Apply the "common" preset.
             if (opensdg.annotationPresets.common) {
-                annotation = $.extend(true, {}, opensdg.annotationPresets.common, annotation);
+                $.extend(true, annotation, opensdg.annotationPresets.common);
             }
             // Apply any specified presets.
-            if (annotation.preset) {
-                var preset = annotation.preset;
+            if (annotationOverrides.preset) {
+                var preset = annotationOverrides.preset;
                 if (opensdg.annotationPresets[preset]) {
-                    annotation = $.extend(true, {}, opensdg.annotationPresets[preset], annotation);
+                    $.extend(true, annotation, opensdg.annotationPresets[preset]);
                 }
             }
+            // Now add any more annotation config.
+            $.extend(true, annotation, annotationOverrides);
             // Default to horizontal lines.
             if (!annotation.mode && annotation.type === 'line') {
                 annotation.mode = 'horizontal';
@@ -939,7 +1029,7 @@ opensdg.chartConfigAlter(function(config, info) {
             var overrides = {
                 options: {
                     annotation: {
-                        drawTime: 'afterDatasetsDraw',
+                        drawTime: 'beforeDatasetsDraw',
                         annotations: annotations
                     }
                 }
@@ -981,7 +1071,7 @@ opensdg.chartConfigAlter(function(config, info) {
         options: {
             tooltips: {
                 intersect: false,
-                axis: 'x'
+                axis: 'x',
             },
         },
         plugins: [{
@@ -1000,7 +1090,6 @@ opensdg.chartConfigAlter(function(config, info) {
                     ctx.lineTo(x, bottomY);
                     ctx.lineWidth = 2;
                     ctx.strokeStyle = '#757575';
-                    ctx.setLineDash([5, 2]);
                     ctx.stroke();
                     ctx.restore();
                 }
@@ -1012,6 +1101,7 @@ opensdg.chartConfigAlter(function(config, info) {
 });
 </script>
 
+            
           </div>
           <div id="plotLegend"></div>
           
@@ -1025,10 +1115,35 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
 
+        <dt class="data-controlled-footer-field unit-from-data">ឯកតារង្វាស់:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
         
 
         
 
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >លេខយោង:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >ទិន្នន័យបានធ្វើបច្ចុប្បន្នភាពចុងក្រោយ:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
         
     <dl>
 </div>
@@ -1038,18 +1153,22 @@ opensdg.chartConfigAlter(function(config, info) {
       <div id="chartSelectionDownload" class="clearfix">
         <button id="btnSave" title="ទាញយកគំនូសតាងជារូបភាព" class='btn btn-primary btn-download'>
           ទាញយករូបភាពគំនូសតាង
-        </button>
+        </button><!-- 
+   --></div>
+    </div>
+
+
+
       </div>
-    </div>
-
-
-
-  </div>
-  <div role="tabpanel" class="tab-pane" id="tableview">
-    <div style="display: none;">
-      <span id="column-sort-info">ចុចដើម្បីតម្រៀបតាមជួរឈរនេះ</span>
-    </div>
-    <div id="selectionsTable"></div>
+    
+  
+    
+      <div role="tabpanel" class="tab-pane " id="tableview">
+        <div style="display: none;">
+          <span id="column-sort-info">ចុចដើម្បីតម្រៀបតាមជួរឈរនេះ</span>
+        </div>
+        <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
 
 
 
@@ -1061,17 +1180,44 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
 
+        <dt class="data-controlled-footer-field unit-from-data">ឯកតារង្វាស់:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
         
 
         
 
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >លេខយោង:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >ទិន្នន័យបានធ្វើបច្ចុប្បន្នភាពចុងក្រោយ:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
         
     <dl>
 </div>
 
 <div id="tableSelectionDownload" class="clearfix"></div>
 
-  </div>
+      </div>
+    
+  
 </div>
 
 
@@ -1677,6 +1823,7 @@ data-event-label="Change to Sources tab"
 
 </div>
 
+
 <footer role="contentinfo">
   <div class="container">
     <div class="row">
@@ -1712,102 +1859,49 @@ data-event-label="Change to Sources tab"
         </div>
       </div>
     </div>
+    
   </div>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script src="//cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+
 <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+
+
+
+
+
+
+
 <script>translations['general'] = translations['general'] || {};
     translations['general']['hide'] = 'លាក់';</script>
 
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'ស្វែងរក';</script>
 
-<script src='/site/assets/js/sdg.js?v=20220615104208'></script>
+<script src='/site/assets/js/sdg.js?v=20220615111206'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20220615104208"></script><script>
-$(function() {
-    if($('#indicatorData').length) {
-      var domData = $('#indicatorData').data();
-
-      if (domData.showdata) {
-
-        $('.async-loading').each(function(i, obj) {
-            $(obj).append($('<img />').attr('src', $(obj).data('img')).attr('alt', translations.indicator.loading));
-        });
-
-        var remoteUrl = '/comb/' + domData.id + '.json';
-        if (opensdg.remoteDataBaseUrl !== '/') {
-          remoteUrl = opensdg.remoteDataBaseUrl + remoteUrl;
-        }
-
-        $.ajax({
-          url: remoteUrl,
-          success: function(res) {
-
-            $('.async-loading').remove();
-            $('.async-loaded').show();
-
-            var model = new indicatorModel({
-              data: res.data,
-              edgesData: res.edges,
-              showMap: domData.showmap,
-              country: domData.country,
-              indicatorId: domData.indicatorid,
-              shortIndicatorId: domData.id,
-              chartTitle: domData.charttitle,
-              chartTitles: domData.charttitles,
-              measurementUnit: domData.measurementunit,
-              showData: domData.showdata,
-              graphType: domData.graphtype,
-              startValues: domData.startvalues,
-              graphLimits: domData.graphlimits,
-              stackedDisaggregation: domData.stackeddisaggregation,
-              graphAnnotations: domData.graphannotations,
-              indicatorDownloads: domData.indicatordownloads,
-              dataSchema: domData.dataschema,
-              compositeBreakdownLabel: domData.compositebreakdownlabel,
-              precision: domData.precision,
-            }),
-            view  = new indicatorView(model, {
-              rootElement: '#indicatorData',
-              legendElement: '#plotLegend',
-              decimalSeparator: '',
-              maxChartHeight: 420,
-              tableColumnDefs: [
-                { maxCharCount: 25 }, // nowrap
-                { maxCharCount: 35, width: 200 },
-                { maxCharCount: Infinity, width: 250 }
-              ]
-            }),
-            controller = new indicatorController(model, view);
-            controller.initialise();
-          }
-        });
-      }
-    }
-
-    var switcher = new accessibilitySwitcher();
-
-
-});
+    <script src="/site/assets/js/custom.js?v=20220615111206"></script><script>
+    new indicatorInit();
+    new accessibilitySwitcher();
 </script>
-
-
 
 
 </body>
