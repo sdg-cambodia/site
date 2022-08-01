@@ -21,3 +21,5 @@ remote_data_prefix: "https://sustainabledevelopment-cambodia.github.io/prod-data
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
   ga_prod: ''
+
+goal_image_base: /assets/img/goals
