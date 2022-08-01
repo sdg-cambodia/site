@@ -2,6 +2,7 @@
 layout: page
 title: Contact
 permalink: /en/contact/
+language: en
 ---
 ### We are interested in your feedback regarding this website and its contents.
 
